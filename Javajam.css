@@ -14,7 +14,7 @@ header {
     padding: 10px;
     background-color: #9769699c;
     display: flex;
-    width: 100%;
+    max-width: 100%;
     box-sizing: border-box;
     flex-wrap: wrap;
     text-align: center;
@@ -29,7 +29,7 @@ header {
 main {
     background-image: url("background.gif");
     background-color: white;
-    width: 100%;
+    max-width: 100%;
     margin: 20px auto
     padding: 20px;
     align-item:center;
