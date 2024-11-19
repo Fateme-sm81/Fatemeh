@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Survey - JavaJam Coffee House</title>
+    <link rel="stylesheet" href="Javajam.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<header>
+    <img src="images/javajamlogo.jpg" alt="JavaJam Logo">
+    <h1>JavaJam Coffee House</h1>
+</header>
+<main>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li> <a href="Music.html">Music</a>
+            </li>
+            <li> <a href="Jobs.html">Job</a></li>
+            <li> <a href="About.html">About</a></li>
+        </ul>
+    </nav>
+    
+    <div class="Music-container">
+
+    <div class="Music-survey">
+    <h2>Music Survey</h2>
+    <p>We’d love to hear your feedback on our live music events! Please take a moment to fill out this survey.</p>
+
+    <form action="#" method="post" class="survey-form">
+        <label for="visit-frequency">How often do you visit JavaJam for live music?</label>
+        <select id="visit-frequency" name="visit-frequency" required>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+            <option value="occasionally">Occasionally</option>
+            <option value="first-time">This is my first time</option>
+        </select>
+        <br>
+        <label>Which genres of music do you enjoy? (Select all that apply)</label><br>
+        <input type="checkbox" name="genre" value="jazz"> Jazz<br>
+        <input type="checkbox" name="genre" value="rock"> Rock<br>
+        <input type="checkbox" name="genre" value="blues"> Blues<br>
+        <input type="checkbox" name="genre" value="folk"> Folk<br>
+        <input type="checkbox" name="genre" value="pop"> Pop<br>
+        <br>
+        <label for="favorite-artist">Who is your favorite artist that has performed at JavaJam?</label>
+        <input type="text" id="favorite-artist" name="favorite-artist">
+        <br>
+        <label for="rating">Rate your experience with our live music (1 = Poor, 5 = Excellent)</label>
+        <input type="range" id="rating" name="rating" min="1" max="5">
+        <br>
+        <label for="comments">Additional Comments:</label> <br>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+        <br>
+        <input type="submit" value="Submit Survey">
+    </form>
+    </div>
+        <div class="Music-pic">
+            <img src="images/melanie.jpg"style="margin-bottom: 25px;">
+            <br>
+            <img src="images/greg.jpg">
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 JavaJam Coffee House. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,213 @@
+body{
+    background-image: url("images/windingroad.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: "Times New Roman", serif;
+
+}
+header {
+
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #9769699c;
+    display: flex;
+    max-width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+nav {
+    background-color: #200d02;
+    height: 92px;
+    align-content: center;
+}
+main {
+    background-image: url("images/background.gif");
+    background-color: white;
+    max-width: 100%;
+    margin: 20px auto
+    padding: 20px;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0;
+}
+nav ul li {;
+    padding: 0 15px;
+}
+nav ul li a:hover {
+    color: #007BFF;
+}
+nav a {
+    text-decoration: none;
+    color: #f5efb9;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+footer {
+    background-color:#b38e76;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    border-top-color: #7b2a2a;
+    border: solid;
+
+}
+header img { border-radius: 105px;
+    width: 88px;
+    height: 87px;}
+
+h2 { text-align: center;
+padding-top: 5px;
+background-color: #46322b;
+
+color: white;}
+.contact-container {
+    text-align: center;
+}
+h1 {
+    padding: 0px 3px 0 271px;
+
+}
+h1{
+    padding-left: 40px;
+}
+@media (max-width: 1440px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul li a {
+        font-size: 1.1em;
+    }
+
+    main {
+        padding: 15px;
+        max-width: 850px;
+        justify-self: center;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul li a {
+        font-size: 1.1em;
+    }
+
+    main {
+        padding: 15px;
+        max-width: 850px;
+        justify-self: center;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul li a {
+        font-size: 1.1em;
+    }
+
+    main {
+        padding: 15px;
+        max-width: 700px;
+        justify-self: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    header, footer {
+        width: 100%;
+        padding: 10px;
+    }
+
+    main {
+        padding: 15px;
+        max-width: 580px;
+        justify-self: center;
+    }
+
+    header img {
+        width: 70px;
+        height: 70px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .menu {
+        display: block;
+        justify-items: center;
+    }
+
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    nav ul li a {
+        font-size: 0.9em;
+    }
+    nav ul {
+            flex-direction: column;
+        align-content: center;
+        }
+    h2 {
+        font-size: 1.4em;
+        text-align: center;
+    }
+
+    .menu-table th, .menu-table td {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    main {
+        padding: 15px;
+        max-width: 100%;
+        justify-self: center;
+    }
+    nav{ height: 250px;}
+    .menu {
+        display: block;
+        justify-items: center;
+    }
+
+}
