@@ -14,7 +14,7 @@ header {
     padding: 10px;
     background-color: #9769699c;
     display: flex;
-    max-width: 100%;
+    width: 100%;
     box-sizing: border-box;
     flex-wrap: wrap;
     text-align: center;
