@@ -118,7 +118,7 @@ h1{
     main {
         padding: 15px;
         max-width: 850px;
-        justify-self: center;
+        justify-content: center;
     }
 }
 
@@ -135,7 +135,7 @@ h1{
     main {
         padding: 15px;
         max-width: 700px;
-        justify-self: center;
+        justify-content: center;
     }
 }
 
@@ -149,7 +149,7 @@ h1{
     main {
         padding: 15px;
         max-width: 580px;
-        justify-self: center;
+        justify-content: center;
     }
 
     header img {
@@ -205,7 +205,7 @@ h1{
     main {
         padding: 15px;
         max-width: 100%;
-        justify-self: center;
+        justify-content: center;
     }
     nav{ height: 250px;}
 
