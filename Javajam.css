@@ -33,6 +33,7 @@ main {
     width: 100%;
     margin: 20px auto
     padding: 20px;
+    align-item:center;
 }
 nav ul {
     display: flex;
