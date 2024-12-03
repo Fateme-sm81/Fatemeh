@@ -5,6 +5,8 @@ body{
     background-attachment: fixed;
     margin: 0;
     font-family: "Times New Roman", serif;
+    margin-right: 0px;
+    margin-left: 22px;
 
 }
 header {
