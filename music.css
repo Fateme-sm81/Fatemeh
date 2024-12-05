@@ -2,7 +2,7 @@ html{
     overflow-x: hidden;
 }
 body{
-    background-image: url("windingroad.jpg");
+    background-image: url("images/windingroad.jpg");
     background-repeat:no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -32,20 +32,22 @@ main {
     background-image: url("images/background.gif");
     background-color: white;
     max-width: 100%;
-    margin: 20px auto
+    margin: 20px auto;
     padding: 20px;
+
 }
 nav {
     background-color: #200d02;
     height: 92px;
     align-content: center;
+ 
 }
 main {
-    background-image: url("background.gif");
+    background-image: url("images/background.gif");
     background-color: white;
     max-width: 100%;
-    margin: 20px auto
     padding: 20px;
+    margin: 20px auto;
 }
 nav ul {
     display: flex;
@@ -55,6 +57,7 @@ nav ul {
     flex-wrap: wrap;
     margin: 0;
 }
+
 nav ul li {;
     padding: 0 15px;
 }
@@ -66,6 +69,12 @@ nav a {
     color: #f5efb9;
     font-size: 1.5em;
     font-weight: bold;
+}
+audio {
+    width: 500px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 34px;
 }
 footer {
     background-color:#b38e76;
@@ -82,15 +91,35 @@ header img { border-radius: 105px;
 main .music-section {
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 8px;
+    background-color: #ffffff4f;
 
 
+}
+.music-section .melanie-photo {
+    box-shadow: 21px 7px 25px  #ffffff;
+    transform: scale(1.5);
+    margin: 55px 20px 0px 19px;
+}
+.Melanie-paragragh{
+    align-content: center;
+    align-self: end;
+    box-shadow : 0px 2px 5px 0px #35312d
 }
 h1{
     padding-left: 40px;
 }
 h3{
-    background-color: #b38e76;
+    background-color: #46322b;
     padding: 4px;
+    border: solid 1px black;
+    box-shadow: 5px 10px 40px black;
+    padding-left: 33px;
+    font-size: 25px;
+    color: wheat;
 }
 p {
     align-content: end;
@@ -113,11 +142,12 @@ h2 {
         padding: 15px;
         max-width: 850px;
         justify-self: center;
+
     }
 }
 
 
-@media (max-width: 1200px) {
+@media  (max-width: 1440px) {
     header h1 {
         font-size: 1.8em;
     }
@@ -130,11 +160,12 @@ h2 {
         padding: 15px;
         max-width: 850px;
         justify-self: center;
+
     }
 }
 
 
-@media (max-width: 1024px) {
+@media  (max-width: 1024px) {
     header h1 {
         font-size: 1.8em;
     }
@@ -147,81 +178,53 @@ h2 {
         padding: 15px;
         max-width: 700px;
         justify-self: center;
+
     }
 }
 
 
 @media (max-width: 768px) {
-    header, footer {
-        width: 100%;
-        padding: 10px;
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul li a {
+        font-size: 1.1em;
     }
 
     main {
         padding: 15px;
-        max-width: 580px;
+        max-width: 850px;
         justify-self: center;
+
     }
-
-    header img {
-        width: 70px;
-        height: 70px;
-    }
-
-    header h1 {
-        font-size: 1.5em;
-    }
-
-    
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    nav ul li a {
-        font-size: 1em;
-    }
-
-    h2 {
-        font-size: 1.5em;
-    }
-    
-
-
 }
+
 
 @media (max-width: 480px) {
     header {
         flex-direction: column;
         align-items: center;
         padding: 5px;
-    }
 
-    header h1 {
-        font-size: 1.2em;
     }
 
     nav ul li a {
-        font-size: 0.9em;
-
+        font-size: 1.1em;
     }
-
-    h2 {
-        font-size: 1.4em;
-        text-align: center;
-    }
-
 
     main {
         padding: 15px;
-        max-width: 100%;
+        width: 280px;
         justify-self: center;
+        
     }
-    nav{ height: 250px;}
-    nav ul {
+   nav ul {
         flex-direction: column;
         align-content: center;
+       gap: 11px;
     }
-
-
+    nav{ height: 250px;}
+    audio {
+        width: 230px;}
 }

@@ -2,7 +2,7 @@ html{
     overflow-x: hidden;
 }
 body{
-    background-image: url("windingroad.jpg");
+    background-image: url("images/windingroad.jpg");
     background-repeat:no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -29,10 +29,10 @@ nav {
     align-content: center;
 }
 main {
-    background-image: url("background.gif");
+    background-image: url("images/background.gif");
     background-color: white;
     max-width: 100%;
-    margin: 20px auto
+    margin: 20px auto;
     padding: 20px;
 }
 nav ul {
@@ -75,6 +75,13 @@ background-color: #46322b;
 color: white;}
 .contact-container {
     text-align: center;
+    background-image: url("images/mugs.jpg");
+    background-repeat: no-repeat;
+    background-size: 845px;
+    background-position: center;
+}
+.contact-part{
+    background-color: #ffffffb8;;
 }
 h1 {
     padding: 0px 3px 0 271px;
@@ -207,7 +214,7 @@ h1{
         max-width: 100%;
         justify-self: center;
     }
-    nav{ height: 250px;}
+   nav{height: 250px;}
     .menu {
         display: block;
         justify-items: center;

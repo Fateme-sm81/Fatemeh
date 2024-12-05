@@ -2,7 +2,7 @@ html{
     overflow-x: hidden;
 }
 body{
-    background-image: url("windingroad.jpg");
+    background-image: url("images/windingroad.jpg");
     background-repeat:no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -29,10 +29,10 @@ header {
     text-align: center;
 }
 main {
-    background-image: url("background.gif");
+    background-image: url("images/background.gif");
     background-color: white;
     max-width: 100%;
-    margin: 20px auto
+    margin: 20px auto;
     padding: 20px;
 }
 nav {
@@ -87,10 +87,7 @@ h1{
     padding-left: 40px;
 }
 .coffee-pic{
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px 0;
+    margin-top: 20px;
 }
 .jobs-container{
     justify-items: left;
@@ -263,7 +260,7 @@ footer {
     .job-application p {
         font-size: 0.9em;
     }
-    nav{ height: 250px;}
+    nav{height: 250px;}
 
     .job-application input[type="submit"],
     .job-application input[type="reset"] {

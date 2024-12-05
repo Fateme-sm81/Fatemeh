@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet"href="Javajam.css">
+    <title>Catalog</title>
+    <meta name="description" content="Welcome to JavaJam Coffee House, where coffee meets comfort.">
+
+</head>
+<style>
+    table {
+        border-collapse: collapse;
+        margin: 20px 0;
+        justify-self: center;
+        width: 100%;
+    }
+    th {
+        background-color: #46322b;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 1px solid white;
+    }
+    td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+    }
+    tr:nth-child(even) {
+        background-color:bisque;
+        color: black;
+    }
+    tr:nth-child(odd) {
+        background-color: #46322b;
+        color: white;
+    }
+    table .border{
+        border-right: 1px solid white;
+    }
+    button{
+        background-color: #46322b;
+        width: 120px;
+        padding: 10px;
+        align-self: center;
+        color: white;
+        margin-bottom: 15px;
+    }
+    h2{
+        color: black;
+        margin-left: 10px;
+    }
+    .table-catalog{
+        justify-items: center;
+        box-shadow: 1px 0px 8px 8px;
+    }
+    h2{
+        border: solid 1px #f5f5dc;
+        box-shadow: 3px 3px 4px #2e2e0057;
+        padding: 11px;
+        text-align: center;
+    }
+    .table-catalog form{
+        width: 100%;
+        text-align: center;
+    }
+</style>
+
+<body>
+<header>
+    <img src="images/javajamlogo.jpg" alt="JavaJam Logo">
+    <h1>JavaJam Coffee House</h1>
+</header>
+
+<main>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li> <a href="Music.html">Music</a>
+            </li>
+            <li> <a href="survey.html">Survey</a></li>
+            <li> <a href="Jobs.html">Job</a></li>
+            <li> <a href="About.html">About</a></li>
+        </ul>
+    </nav>
+    <div><h2>Catalog</h2></div>
+    <div id="gallery">
+        <figure>
+            <img src="images/javashirt.jpg" alt="Java shirt"width="200px"><br>
+        <figcaption> Java shirt</figcaption></figure>
+        <figure>
+            <img src="images/javamug.jpg" alt="javamug" width="200px">
+            <figcaption> Java Mug</figcaption>
+        </figure>
+        </div>
+    <div class="table-catalog">
+        <form onsubmit="event.preventDefault(); calculateTotal();">
+            <table>
+                <tr>
+                    <th>Description</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Cost</th>
+                </tr>
+                <tr>
+                    <td>JavaJam Shirt</td>
+                    <td><input type="number" class="quantity" value="0" min="0" onchange="calculateTotal()"></td>
+                    <td class="price">14.95</td>
+                    <td class="cost">0.00</td>
+                </tr>
+                <tr>
+                    <td>JavaJam Mug</td>
+                    <td><input type="number" class="quantity" value="0" min="0" onchange="calculateTotal()"></td>
+                    <td class="price">9.95</td>
+                    <td class="cost">0.00</td>
+                </tr>
+                <tr>
+                    <td colspan="3"><strong>Total Cost</strong></td>
+                    <td id="totalCost"><strong>0.00</strong></td>
+                </tr>
+            </table>
+            <button type="submit">Calculate Total</button>
+        </form>
+    </div>
+
+</main>
+<footer>
+    &copy; 2024 JavaJam Coffee House <br>
+    <script>
+        document.write("Last modified: " + document.lastModified);
+    </script>
+</footer>
+<script>
+    function calculateTotal() {
+        const quantities = document.querySelectorAll('.quantity');
+        const prices = document.querySelectorAll('.price');
+        let total = 0;
+
+        quantities.forEach((quantity, index) => {
+            const cost = quantity.value * parseFloat(prices[index].textContent);
+            document.querySelectorAll('.cost')[index].textContent = cost.toFixed(2);
+            total += cost;
+        });
+
+        document.getElementById('totalCost').textContent = total.toFixed(2);
+    }
+
+</script>
+</body>
+
+</html>
+

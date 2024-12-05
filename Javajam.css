@@ -2,14 +2,12 @@ html{
     overflow-x: hidden;
 }
 body{
-    background-image: url("windingroad.jpg");
+    background-image: url("images/windingroad.jpg");
     background-repeat:no-repeat;
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
     font-family: "Times New Roman", serif;
-    margin-right: 0px;
-
 
 }
 header {
@@ -32,12 +30,11 @@ header {
 
 }
 main {
-    background-image: url("background.gif");
+    background-image: url("images/background.gif");
     background-color: white;
     max-width: 100%;
-    margin: 20px auto
+    margin: 20px auto;
     padding: 20px;
-
 }
 nav ul {
     display: flex;
@@ -94,6 +91,42 @@ h1{
     display: flex;
     margin: 20px;
 }
+
+#gallery {
+    justify-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#gallery li {
+    display: inline;
+}
+#gallery img {
+    border: 2px solid #EAEAEA;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+#gallery img:hover {
+    transform: scale(1.1);
+}
+#gallery figure {
+
+    text-align: center;
+    align-content: center;
+}
+#gallery figcaption {
+    font-weight: bold;
+    margin-top: 10px;
+}
+.Music-pic{
+    align-content: center;
+    margin-left: 34px;
+}
+.order{
+    background-color: #d3aa5954;
+}
+
 @media (max-width: 1440px) {
     header h1 {
         font-size: 1.8em;
@@ -111,7 +144,7 @@ h1{
 }
 
 
-@media (max-width: 1200px) {
+@media  (max-width: 1200px) {
     header h1 {
         font-size: 1.8em;
     }
@@ -122,10 +155,9 @@ h1{
 
     main {
         padding: 15px;
-        max-width: 850px;
-        justify-content: center;
+        width: 850px;
+        justify-self: center;
     }
-}
 
 
 @media (max-width: 1024px) {
@@ -140,7 +172,7 @@ h1{
     main {
         padding: 15px;
         max-width: 700px;
-        justify-content: center;
+        justify-self: center;
     }
 }
 
@@ -154,7 +186,7 @@ h1{
     main {
         padding: 15px;
         max-width: 580px;
-        justify-content: center;
+        justify-self: center;
     }
 
     header img {
@@ -178,9 +210,6 @@ h1{
     h2 {
         font-size: 1.5em;
     }
-    
-
-
 }
 
 @media (max-width: 480px) {
@@ -210,9 +239,9 @@ h1{
     main {
         padding: 15px;
         max-width: 100%;
-        justify-content: center;
+        justify-self: center;
     }
     nav{ height: 250px;}
 
-
+    .Music-container { display: block;}
 }

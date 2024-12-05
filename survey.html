@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Survey - JavaJam Coffee House</title>
     <link rel="stylesheet" href="Javajam.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Welcome to JavaJam Coffee House, where coffee meets comfort.">
 </head>
 <body>
 <header>
-    <img src="javajamlogo.jpg" alt="JavaJam Logo">
+    <img src="images/javajamlogo.jpg" alt="JavaJam Logo">
     <h1>JavaJam Coffee House</h1>
 </header>
 <main>
@@ -22,6 +23,7 @@
             </li>
             <li> <a href="Jobs.html">Job</a></li>
             <li> <a href="About.html">About</a></li>
+            <li> <a href="catalog.html">Catalog</a></li>
         </ul>
     </nav>
     
@@ -31,44 +33,70 @@
     <h2>Music Survey</h2>
     <p>We’d love to hear your feedback on our live music events! Please take a moment to fill out this survey.</p>
 
-    <form action="?" method="get" class="survey-form">
-        <label for="visit-frequency">How often do you visit JavaJam for live music?</label>
+    <form action="http://webdevbasics.net/scripts/demo.php" method="post" class="survey-form">
+        <label for="name">Name:</label>
+
+        <input type="text" name="name" id="name"> <br><br> 
+
+        <label for="email">E-Mail: </label>
+
+        <input type="text" name="email" id="email"> <br><br>
+        <label for="visit-frequency">How often do you visit JavaJam for live music?</label><br><br>
         <select id="visit-frequency" name="visit-frequency" required>
             <option value="weekly">Weekly</option>
             <option value="monthly">Monthly</option>
             <option value="occasionally">Occasionally</option>
             <option value="first-time">This is my first time</option>
         </select>
+        <br><br>
+
+        <fieldset><legend>Which genres of music do you enjoy? (Select all that apply)</legend>
         <br>
-        <label>Which genres of music do you enjoy? (Select all that apply)</label><br>
-        <input type="checkbox" name="genre" value="jazz"> Jazz<br>
-        <input type="checkbox" name="genre" value="rock"> Rock<br>
-        <input type="checkbox" name="genre" value="blues"> Blues<br>
-        <input type="checkbox" name="genre" value="folk"> Folk<br>
-        <input type="checkbox" name="genre" value="pop"> Pop<br>
-        <br>
+            <label> <input type="checkbox" name="genre" value="jazz"> Jazz</label><br>
+            <label> <input type="checkbox" name="genre" value="rock"> Rock</label><br>
+            <label><input type="checkbox" name="genre" value="blues"> Blues</label><br>
+            <label><input type="checkbox" name="genre" value="folk"> Folk</label><br>
+            <label><input type="checkbox" name="genre" value="pop"> Pop</label><br>
+        </fieldset>
+        <br><br> 
+        <label for="locations">Select the locations you listen to Music:</label><br>
+
+        <select size="3" name="locations" multiple="multiple" id="locations" >
+
+            <option value="None selected" selected="selected">Select one or more locations</option>
+
+            <option value="At home">At home</option>
+
+            <option value="In car">In the car</option>
+
+            <option value="Anywhere">Anywhere (MP3 Player)</option>
+
+        </select> <br><br>
         <label for="favorite-artist">Who is your favorite artist that has performed at JavaJam?</label>
         <input type="text" id="favorite-artist" name="favorite-artist">
-        <br>
+        <br><br>
         <label for="rating">Rate your experience with our live music (1 = Poor, 5 = Excellent)</label>
         <input type="range" id="rating" name="rating" min="1" max="5">
-        <br>
+        <br><br>
         <label for="comments">Additional Comments:</label> <br>
         <textarea id="comments" name="comments" rows="4"></textarea>
-        <br>
-        <input type="submit" value="Submit Survey">
+        <br><br> 
+        <input type="submit" value="Submit Survey" > <input type="reset">
     </form>
     </div>
         <div class="Music-pic">
-            <img src="melanie.jpg"style="margin-bottom: 25px;">
+            <img src="images/melanie.jpg"style="margin-bottom: 25px;">
             <br>
-            <img src="greg.jpg">
+            <img src="images/greg.jpg">
         </div>
     </div>
 </main>
 
 <footer>
-    <p>&copy; 2024 JavaJam Coffee House. All Rights Reserved.</p>
+    <p>&copy; 2024 JavaJam Coffee House. All Rights Reserved.</p> <br>
+    <script>
+        document.write("Last modified: " + document.lastModified);
+    </script>
 </footer>
 </body>
 </html>

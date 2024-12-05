@@ -2,7 +2,7 @@ html{
     overflow-x: hidden;
 }
 body{
-    background-image: url("windingroad.jpg");
+    background-image: url("images/windingroad.jpg");
     background-repeat:no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -37,11 +37,11 @@ nav {
     align-content: center;
 }
 main {
-    background-image: url("background.gif");
+    background-image: url("images/background.gif");
     background-color: white;
     max-width: 100%;
-    margin: 20px auto
-    padding: 20px;
+    margin: 20px auto;
+    padding : 20px;
 }
 nav ul {
     display: flex;
@@ -78,7 +78,7 @@ header img { border-radius: 105px;
     margin-right: 20px;
 }
 h2{
-    padding: 9px;
+    padding: 44px;
     margin: 0;
     font-weight: bold;
     font-size: 30px;
@@ -109,7 +109,6 @@ h3{
 }
 .menu-table {
     max-width: 600px;
-    margin: 20px ;
     background-color: #F9F2E7;
     border-collapse: collapse;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -138,7 +137,8 @@ h3{
     border-bottom: none;
 }
 .menu{
-    ustify-content: space-between;
+    justify-content: space-between;
+    justify-content: center;
 }
 .image {
     padding: 3px 12px;
@@ -269,9 +269,12 @@ h3{
         display: block;
         justify-items: center;
     }
-    nav ul {
+   nav ul {
+       display: flex;
+       flex-wrap: wrap;
         flex-direction: column;
         align-content: center;
+       gap: 7px;
     }
 
 }
